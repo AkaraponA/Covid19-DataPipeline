@@ -73,7 +73,7 @@ def save_data_into_db():
 
 def return_line_noti():
     url = 'https://notify-api.line.me/api/notify'
-    token = '1jwDQeSToVT6dQ49iExGWDvv5AXTANEnlzi6rcO754j'
+    token = 'enter your line notify token'
     headers = {
                 'content-type':
                 'application/x-www-form-urlencoded',

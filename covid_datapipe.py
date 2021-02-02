@@ -91,7 +91,7 @@ default_args = {
     }
 
 with DAG('covid19_data_pipeline',
-         schedule_interval='30 6 * * *',
+         schedule_interval='0 7 * * *',
          default_args=default_args,
          description='A simple data pipeline for COVID-19 report',
          catchup=False) as dag:
@@ -116,7 +116,8 @@ with DAG('covid19_data_pipeline',
         python_callable=return_line_noti
     )
 
-# If No such a Table: Uncomment Below
+# If No such a Table : Uncomment Below
 # t1 >> t2 >> t3 >> t4
 
+# If Table already create : Uncomment Below
 t1 >> t3 >> t4
